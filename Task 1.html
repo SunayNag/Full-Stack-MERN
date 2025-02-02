@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Week 1 Task 1</title>
+</head>
+<style>
+    body{
+        background-color: skyblue;
+        color: white;
+        padding: 10px;
+    }
+    h1{
+        text-align: center;
+    }
+    .first{
+        text-align: left;
+        font-family: 'Lucida Handwriting';
+        font-size: 125%;
+        line-height: 20px;
+    }
+    .second{
+        text-align: right;
+        font-size: 15px;
+        font-family: 'Courier New';
+        line-height: 25px;
+    }
+    #image{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 1000;
+    }
+    button{
+        font-size: 16px;
+        padding: 7px 10px;
+        border: 5px solid;
+        color: yellow;
+        border-color: silver;
+        background-color: black;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: silver;
+        border-color: black;
+        color: red;
+    }
+    table{
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 25px;
+        padding: 10px;
+        text-align: center;
+        width: 50%;
+    }
+    table, th,td{
+        border: 5px solid;
+        border-color:lime ;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    th{
+        padding: 5px;
+        color: red;
+    }
+    th:hover{
+        background-color: red;
+        color: white;
+    }
+    td:hover{
+        background-color: silver;
+        color: black;
+    }
+</style>
+<body>
+    <h1>This is the first task</h1>
+    <p class="first">The first of the Full Stack MERN Development. This text is left aligned</p>
+    <p class="second">This course is offered by SmartBridge. This text is right aligned</p>
+    <div id="image">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Sardar_patel_%28cropped%29.jpg/330px-Sardar_patel_%28cropped%29.jpg" alt="Iron man of india">
+        <p>Sardar Vallabhbhai Patel</p>
+    </div>
+    <div style="text-align: center;">
+        <button>
+            Test Button
+        </button>
+    </div>
+
+    <div class="table">
+        <table>
+            <tr>
+                <th>First</th>
+                <th>Second</th>
+                <th>Third</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+    </div>
+
+    <form>
+        <label>Enter your name:</label><br>
+        <input type="text"><br><br>
+        <label>What language do you prefer?</label><br>
+        <input type="checkbox" name="language">
+        <label>Pyhton</label><br>
+        <input type="checkbox" name="language">
+        <label>Java</label><br>
+        <input type="checkbox" name="language">
+        <label>C++</label><br><br>
+        <input type="submit">
+    </form>
+    
+</body>
+</html>
