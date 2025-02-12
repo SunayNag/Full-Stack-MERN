@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Tasks</title>
+  </head>
+  <body>
+    <h1>JavaScript Tasks Output</h1>
+    <p><strong>Is Adult:</strong> <span id="isAdult"></span></p>
+    <p><strong>Addition (10 + 5):</strong> <span id="addition"></span></p>
+    <p><strong>Multiplication (10 * 5):</strong> <span id="multiplication"></span></p>
+    <p><strong>Modulus (10 % 5):</strong> <span id="modulus"></span></p>
+    <p><strong>Even or Odd (n = 7):</strong> <span id="isEven"></span></p>
+    <p><strong>Numbers from 1 to 5:</strong> <span id="numbers"></span></p>
+    <p><strong>Square of 4:</strong> <span id="square"></span></p>
+
+    <script>
+      // Task 1: Declare age and check if the person is an adult
+      let age = 25;
+      let isAdult = age >= 18; // true if age is 18 or more
+
+      // Task 2: Perform arithmetic operations
+      let x = 10;
+      let y = 5;
+      let addition = x + y;
+      let multiplication = x * y;
+      let modulus = x % y;
+
+      // Task 3: Check if a number is even or odd
+      let n = 7; // Change this number to test different cases
+      let isEven = (n % 2 === 0) ? "Even" : "Odd";
+
+      // Task 4: Store numbers from 1 to 5 in an array using a for loop
+      let numbers = [];
+      for (let i = 1; i <= 5; i++) {
+        numbers.push(i);
+      }
+
+      // Task 5: Function to return the square of a number
+      function square(num) {
+        return num * num;
+      }
+
+      // Display results on the webpage
+      document.getElementById("isAdult").innerText = isAdult;
+      document.getElementById("addition").innerText = addition;
+      document.getElementById("multiplication").innerText = multiplication;
+      document.getElementById("modulus").innerText = modulus;
+      document.getElementById("isEven").innerText = isEven;
+      document.getElementById("numbers").innerText = numbers.join(", ");
+      document.getElementById("square").innerText = square(4); // Example with 4
+    </script>
+  </body>
+</html>
